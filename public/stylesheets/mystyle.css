@@ -1,0 +1,623 @@
+body{padding:0px;overflow:hidden;font:14px "Lucida Grande",Helvetica,Arial,sans-serif}a{color:#00B7FF}
+
+
+#body {
+    width: 100%;
+    height: 100%;
+}
+
+#viewscene {
+    margin-top: -6px;
+    width: 99.65%;
+    background: #333;
+}
+
+#viewscene_void {
+    width: 99.65%;
+    height: 600px;
+    border:4px solid #333;
+    align-content: center;
+    /*background-size: 300px 300px;*/
+    /*background-image: url("sidebox.png");*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: right bottom;*/
+
+}
+
+#viewscene_void_attention {
+
+    border:3px solid #b3030b;
+    width: 500px;
+    height: 175px;
+    margin: 0 auto;
+}
+#viewscene_guide {
+    width: 99.6%;
+    height: 600px;
+    border:4px solid #333;
+
+}
+
+.viewsceneVoidText{
+    margin-top:50px;
+    margin-bottom: -20px;
+    font:"Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+    color: #333;
+}
+
+.viewsceneGuideText{
+    margin-top:50px;
+    margin-bottom: -20px;
+    font:"Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+    color: #333;
+}
+
+#topcontainer {
+    width:100%;
+    height:170px;
+    text-align:center;
+}
+
+#info_initial{
+    float:right;
+    width:100%;
+    height: 100%;
+    background: #333;
+
+}
+
+#info_aboutpage{
+    float:right;
+    width:100%;
+    height: 100%;
+    background: #333;
+    display: none;
+
+}
+
+
+#infosection {
+    float:right;
+    width:79%;
+    height: 100%;
+    background: #333;
+
+}
+
+
+#infosection_userinfo {
+    float:left;
+    width:30%;
+    height: 100%;
+    background: #333;
+    -moz-box-sizing:    border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing:        border-box;
+    border:4px solid #333;
+    /*This is for boxoutline*/
+    /*box-shadow: 0px 0px 0px 2px  #ccc inset;*/
+
+}
+
+
+.userinfo_text {
+    margin-top:15px;
+    margin-left: 10px;
+    margin-bottom: -2px;
+    font: 82% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+    padding: 0;
+    color:#ccc;
+    list-style: none;
+}
+
+
+#infosection_repoinfo {
+    float:right;
+    width:70%;
+    height: 100%;
+    background: #333;
+    -moz-box-sizing:    border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing:        border-box;
+    border:4px solid #333;
+     /*This is for boxoutline*/
+    /*box-shadow: 0 0 0 2px #ccc inset;*/
+    overflow: hidden;
+}
+
+
+#sidepanel {
+    float:left;
+    background: #333;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    height: 170px;
+}
+#sidepanel li {
+    font: 76.5% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#sidepanel a {
+    background: #333;
+    border-bottom: 1px solid #3e3e3e;
+    color: #ccc;
+    display: block;
+    margin: 0;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-weight: normal;
+}
+#sidepanel a:hover {
+    background: #2580a2 left center no-repeat;
+    color: #fff;
+    padding-bottom: 8px;
+}
+
+
+
+/*This is the popup form css script part*/
+
+
+.button{
+    border:1px solid #333;
+    background:#6479fd;
+}
+.button:hover{
+    background:#a4a9fd;
+}
+
+.formdialog{
+    border:5px solid #666;
+    padding:10px;
+    background:#3A3A3A;
+    position:absolute;
+    display:none;
+}
+.formdialog label{
+    display:inline-block;
+    color:#cecece;
+}
+
+input[type=text]{
+    border:1px solid #333;
+    display:inline-block;
+    margin:5px;
+}
+
+#form_button{
+    width: 100%;
+
+}
+
+
+#btnSUBMIT{
+    border:1px solid #6b6a63;
+    background:#ff9999;
+    width: 70px;
+    margin:10px;
+}
+
+#btnSUBMIT:hover{
+    border:1px solid #000;
+    width: 70px;
+    background:#ffacac;
+}
+
+
+
+#btnCANEL{
+    border:1px solid #6b6a63;
+    background:#ff9999;
+    width: 70px;
+    margin:10px;
+}
+
+#btnCANEL:hover{
+    border:1px solid #000;
+    width: 70px;
+    background:#ffacac;
+}
+
+
+
+
+#btnApply{
+    border:1px solid #000;
+    background:#ff9999;
+    width: 50px;
+    margin-left: 5px;
+}
+
+
+#btnApply:hover{
+    border:1px solid #000;
+    width: 50px;
+    background:#ffacac;
+    margin-left: 5px;
+
+}
+
+
+#btnSeeChange{
+    border:1px solid #000;
+    background:#ff9999;
+    width: 80px;
+    cursor: pointer;
+    float: right;
+    margin-right: 10px;
+}
+
+/*Set the popup dialog at the center of the webpage*/
+#myform{
+    width:600px;
+    border-radius: 3px;
+    background:#6b6a63;
+    margin:30px auto 0;
+    padding:6px;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -300px;
+    margin-top: -30px; /* This should be half of the total height of your div */
+}
+
+
+/*========================REPOSLECTION TABS========================*/
+
+#repoinfo_container{
+    width: 100%;
+}
+
+
+#repoSelectionTab{
+    margin-top: 5px;
+    margin-left: 5px;
+    float:left;
+    background: #333;
+    list-style: none;
+    padding: 0;
+    width: 35%;
+    height: 91%;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+
+/*Hide Scrollbar*/
+#repoSelectionTab::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+#repoSelectionTab li{
+    font-size: 90%;
+    margin:0;
+    list-style: none;
+    background: #2580a2
+
+}
+
+#repoSelectionTab a{
+    background: #333;
+    border-bottom: 1px solid #3e3e3e;
+    color: #ccc;
+    display: block;
+    margin: 0;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+
+#repoSelectionTab a:hover {
+    background: #2580a2 left center no-repeat;
+    color: #fff;
+    padding-bottom: 8px;
+}
+
+
+/*Hide Scrollbar*/
+#repoTabContent::-webkit-scrollbar {
+    display:none;
+}
+
+
+#repoTabContent{
+    position: relative; /*Magic! WORKED FOR Mac chrome hover,with this line added!!!!*/
+    background: #2580a2;
+    width: 65%;
+    height: 89%;
+    margin-top: -146px;   /*TO KEEP TWO DIV ON THE SAME LINE*/
+    margin-right: 5px;
+    float: right;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.tab_active{
+    background: gray;
+
+}
+.tab_content_active{
+    width: 100%;
+}
+
+.tab_content_noneactive{
+    display: none;
+}
+
+.repoinfo_list{
+float: left;
+}
+.repoinfo_text{
+    margin-top: 3px;
+    color: #ffffff;
+    font-size: 90%;
+    list-style: none;
+    text-align: left;
+}
+
+
+.commit_infotext{
+    width: 400px;
+}
+
+.commit_infobox{
+
+    /*color:rgba(255,255,132,0.4);*/
+
+}
+
+
+/*===============================Loading Spinner============================*/
+.loader {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, 0.5 )
+    url('http://i.stack.imgur.com/FhHRx.gif')
+    50% 50%
+    no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .loader {
+    display: block;
+}
+
+
+
+
+/*===============================Button Control Dropdown============================*/
+
+.btnControl{
+    /*border:1px solid #ccc;*/
+    background:#303030;
+    margin:5px;
+    display:block;
+    width:200px;
+    height: 25px;
+    cursor: pointer;
+    text-align: center;
+    line-height:25px;
+}
+.btnControlChild{
+    /*border:1px solid #ccc;*/
+    background:#2580a2;
+    margin:5px;
+    display:block;
+    width:200px;
+    height: 25px;
+    cursor: pointer;
+    text-align: center;
+    line-height:25px;
+}
+
+.btnControlChild:active{
+    /*border:1px solid #ccc;*/
+    background:#303030;
+    margin:5px;
+    display:block;
+    width:200px;
+    height: 25px;
+    cursor: pointer;
+    text-align: center;
+    line-height:25px;
+}
+
+.btnControlChild:active, .active {
+    background-color:#e3a21a;
+}
+
+
+
+.btnControlChildSpecial{
+    /*border:1px solid #ccc;*/
+    background:#2580a2;
+    margin:5px;
+    display:block;
+    width:200px;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    line-height:25px;
+}
+
+.btnControlChildSpecial:active{
+    /*border:1px solid #ccc;*/
+    background:#303030;
+    margin:5px;
+    display:block;
+    width:200px;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    line-height:25px;
+}
+
+.btnControlChildSpecial:active, .active {
+    background-color:#e3a21a;
+}
+
+
+
+.commitMsgList{
+    /*border:1px solid #ccc;*/
+    background:#303030;
+    margin:5px;
+    display:block;
+    width:320px;
+    height: 22px;
+    cursor: pointer;
+    text-align: left;
+    line-height:25px;
+    padding-left: 5px;
+
+}
+
+.commitMsgList:active{
+    /*border:1px solid #ccc;*/
+
+    background:#303030;
+    margin:5px;
+    display:block;
+    width:320px;
+    height: 30px;
+    cursor: pointer;
+    text-align: center;
+    line-height:25px;
+
+}
+
+.commitMsgList:active, .active {
+    background-color:#e3a21a;
+}
+
+
+
+
+
+
+
+
+
+.btnControlParent{
+    /*border:1px solid #ccc;*/
+    background:#303030;
+    margin:5px;
+    display:block;
+    width:200px;
+    height: 25px;
+    cursor: pointer;
+    text-align: center;
+    line-height:25px;
+}
+li.btnControlParent :after {
+    color: #FFFFFF;
+    content: ' ▾';
+    float: right;
+    padding-right: 3px;
+}
+
+.btnControlTop{
+    /*border:1px solid #ccc;*/
+    background:#303030;
+    margin:5px;
+    display:block;
+    width:200px;
+    height: 25px;
+    cursor: pointer;
+    text-align: center;
+    line-height:25px;
+
+}
+
+li.btnControlTop :after {
+    color: #FFFFFF;
+    content: ' ▾';
+    float: right;
+    padding-right: 3px;
+}
+
+
+
+
+/*=================================COMMIT MESSAGE PART===========================*/
+
+
+
+
+.btnControlCommitMessageList{
+    /*border:1px solid #ccc;*/
+    background:#303030;
+    margin:5px;
+    display:block;
+    width:320px;
+    height: 25px;
+    cursor: pointer;
+    text-align: left;
+    line-height:25px;
+    padding-left: 5px;
+}
+
+
+.CommitMessageListContainer{
+
+    height: 17%;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+
+
+
+
+
+/*=================================EXTRA SETTING============================*/
+.hiddenText{
+    display: none;
+}
+
+.hoverkeep{
+    background: #2580a2 left center no-repeat;
+    color: #fff;
+    padding-bottom: 8px;
+}
+
+.center{
+    margin-left: 42%;
+    margin-top: 300px;
+    align-content: center;
+    width: 300px;
+}
+
+.colorBlock{
+    /*border:1px solid #ccc;*/
+    background:#303030;
+    display:inline;
+    width:50px;
+    height: 25px;
+
+
+}
+.colorMap{
+    /*border:1px solid #ccc;*/
+    /*background:#303030;*/
+    margin: 20px;
+}

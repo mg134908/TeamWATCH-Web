@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}
+
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    </title>
+    <link rel='stylesheet' href='/stylesheets/mystyle.css' />
+
+    <style>
+        h2{color: #ffffff}
+        p{color: #ffffff}
+
+    </style>
+</head>
+<body>
+
+<script type="text/javascript">
+//    Link will be passed in for redirect from the post request handle in app.js
+    window.location.href = "{{oauth_redirect_link}}"
+</script>
+
+</body>
+</html>
