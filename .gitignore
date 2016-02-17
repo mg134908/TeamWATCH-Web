@@ -1,0 +1,16 @@
+# Mac DS_Store file
+.DS_Store
+
+# Node Modules
+node_modules
+
+
+# Directory project format
+.idea/
+
+# serverData
+!/serverData
+/serverData/*
+
+# tempData
+key_data
