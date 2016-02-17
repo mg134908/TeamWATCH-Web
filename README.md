@@ -13,7 +13,8 @@ https://confluence.atlassian.com/bitbucket/oauth-faq-338365710.html#OAuthFAQ-Wha
 
 
 ## Acknowledgement
-This project is constructed with many open source packages, all NPM packages are not inside the source, specific information refer to the json dependency file. The model tree map coordinate computation implementation is from nicopolyptic/treemap and imranghory/treemap-squared, all credit to Nicholas Nguyen and Imran Ghory.       Github Link:       
+This project is constructed with many open source packages, all NPM packages are not inside the source, specific information refer to the json dependency file. The model tree map coordinate computation implementation is from nicopolyptic/treemap and imranghory/treemap-squared, all credit to Nicholas Nguyen and Imran Ghory.       
+Github Link:       
 https://github.com/nicopolyptic/treemap       
 https://github.com/imranghory/treemap-squared       
 The communication protocol working with bitbucket.org site is using oauth1.0a standard.
