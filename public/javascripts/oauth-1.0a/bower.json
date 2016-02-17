@@ -1,0 +1,31 @@
+{
+  "name": "oauth-1.0a",
+  "main": "oauth-1.0a.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/ddo/oauth-1.0a",
+  "authors": [
+    "Ddo <ddo.me>"
+  ],
+  "description": "OAuth 1.0a Request Authorization for Node and Browser",
+  "keywords": [
+    "oauth",
+    "1.0a",
+    "oauth1.0a",
+    "authorize",
+    "signature",
+    "nonce",
+    "consumer"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "build",
+    "node_modules",
+    "test",
+    "test_browser",
+    "test_extension",
+    ".coveralls.yml",
+    "component.json",
+    "README.md"
+  ]
+}

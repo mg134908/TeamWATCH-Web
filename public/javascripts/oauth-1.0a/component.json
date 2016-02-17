@@ -1,0 +1,23 @@
+{
+  "name": "oauth-1.0a",
+  "repo": "ddo/oauth-1.0a",
+  "description": "OAuth 1.0a Request Authorization for Node and Browser",
+  "version": "0.1.0",
+  "keywords": [
+    "oauth",
+    "1.0a",
+    "oauth1.0a",
+    "authorize",
+    "signature",
+    "nonce",
+    "consumer"
+  ],
+  "license": "MIT",
+  "main": "oauth-1.0a.js",
+  "scripts": [
+    "oauth-1.0a.js"
+  ],
+  "dependencies": {
+    "apily/sha1": "*"
+  }
+}

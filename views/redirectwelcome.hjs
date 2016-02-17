@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>{{ title }}
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    </title>
+    <link rel='stylesheet' href='/stylesheets/mystyle.css'/>
+
+    <style>
+        h2 { color: #ffffff  }
+        p {  color: #ffffff  }
+    </style>
+</head>
+<body>
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+
+<script type="text/javascript">
+    /*Bool variable for controlling the 3D repo rendering*/
+    var is_dataready ={{is_dataready}};
+    //console.log(isdata_ready);
+    if(is_dataready==1){//DISPLAY USER INFO
+        //console.log("Here");
+        $(function () {
+            $('#info_initial').css("display","none");
+            $('#info_aboutpage').css("display","none");
+
+        });
+    }else if(is_dataready==2){//DISPLAY INITIAL REPO INFO
+        $(function () {
+            $('#info_aboutpage').css("display","none");
+
+        });
+    }
+    else{//DISPLAY ABOUT PAGE
+        $(function () {
+            $('#info_initial').css("display","none");
+        });
+    }
+
+</script>
+
+<div id="body">
+<!--===============================div top container to hold the menu and the repo information section===============-->
+<div id="topcontainer">
+    <div id="sidepanel">
+        <ul>
+            <li class='active'><a href='/'><span>Repository Info</span></a></li>
+            <li><a href='indicator'><span>Indicator</span></a></li>
+            <li><a href="#"  id="btnABOUT"><span>About</span></a></li>
+            <li class='last'><a href='#' class="button"><span>Login</span></a></li>
+        </ul>
+    </div>
+
+    <div id="infosection">
+
+        <div id="info_initial">
+            <br><br><br>
+            <h2 id="repoinitial_info">Repo info will be displayed here</h2>
+        </div>
+
+        <div id="info_aboutpage">
+            <br>
+            <h2>About</h2>
+            <p id="aboutpage_info" align="left" style="padding-left: 30px;">{{aboutpage_extra_info}}</p>
+            <p id="aboutpage_info" align="left" style="padding-left: 30px">Contact Info:{{contact_info}}</p>
+
+        </div>
+
+    </div>
+</div>
+<!--===============================End of div top container to hold the menu and the repo information section========-->
+
+
+
+<!--===============================Popup form for user to fillup the public and secret key part=====================-->
+<!--<input type="button" class="button" value="Click">-->
+<div id="formpopup">
+    <br>
+    <!-- Dialog Box-->
+    <div class="formdialog" id="myform">
+        <p>
+        <form method="post" action="/send" id="newform">
+            <label>Public Key:</label></br>
+            <input type="text" name="public_key" size="60" id="public_key"></br>
+            <label>Secret Key:</label></br>
+            <input type="text" name="secret_key" size="60" id="secret_key">
+            <a href="https://confluence.atlassian.com/display/BITBUCKET/OAuth+FAQ#OAuthFAQ-WhatisOAuth?" target="_blank" style="cursor: pointer"><u><font color="#cecece">What's this?</font></u></a>
+            <div id="form_button" align="left">
+                <input type="submit" class="button" value="Submit" id="btnSUBMIT">
+                <input type ="button" class="button" value="Cancel" id="btnCANEL">
+            </div>
+        </form>
+        </p>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $(".button").click(function () {
+            $("#myform").show(500);
+        });
+
+        $("#btnCANEL").click(function () {
+            $("#myform").hide(400);
+        });
+        $("#btnSUBMIT").click(function () {
+            $("#myform").hide(400);
+        });
+
+        $("#btnABOUT").click(function () {
+            $('#info_initial').css("display","none");
+            $("#info_aboutpage").show();
+        });
+
+
+
+    });
+
+</script>
+<!--===============================End of Popup form for user to fillup the public and secret key part===============-->
+<div id="viewscene_void">
+    <h1 class="viewsceneVoidText" align="center">Welcome</h1>
+    <h1 class="viewsceneVoidText" align="center">Log in to view the Repository Model</h1>
+
+    </br></br></br></br></br></br></br></br>
+    <div id="viewscene_void_attention" style="margin-top: 120px ">
+        <h1  align="center"><font color="#8b0000">Attention</font></h1>
+        <p  align="center" style="padding-left: 5px"><font color="#8b0000">This is a test server with limited storage capacity.</font></p>
+        <p  align="center" style="padding-left: 5px"><font color="#8b0000">You may run out of server space and experience problems during normal use if there are too many concurrent users.
+            Please notify the developer in that case with contact information at about page. Or visit <a href="http://vital.cs.ohiou.edu/"><font color="blue">http://vital.cs.ohiou.edu/</font></a>  for more contact info. Thanks.</font></p>
+    </div>
+
+
+    <p class="viewsceneVoidText" align="center" style="margin-top: 20px" ><u>Alpha, Limited Test Version</u></p>
+</div>
+
+</div>
+
+
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-61173558-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

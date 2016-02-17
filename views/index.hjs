@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-------------------------------------------------------------------------------
+ !  This is the main index page for teamwatchweb site
+ !  There are total two major div parts
+ !  One for controlling selection
+ !  One for controlling display.
+ !
+ !  Created by: Minyuan Gao
+ !
+ !
+--------------------------------------------------------------------------------->
+
+
+
+
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>{{ title }}
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    </title>
+    <link rel='stylesheet' href='/stylesheets/mystyle.css'/>
+
+    <style>
+        h2 {
+            color: #ffffff
+        }
+
+        p {
+            color: #ffffff
+        }
+    </style>
+</head>
+<body>
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+<script type="text/javascript">var is_dataready ={{is_dataready}};</script>
+<script type="text/javascript" src="/javascripts/indexInit.js">
+</script>
+
+
+<!--===============================div top container to hold the menu and the repo information section===============-->
+<div id="topcontainer">
+    <div id="sidepanel">
+        <ul>
+            <li class='active'><a href='/'><span>Repository Info</span></a></li>
+            <li><a href='indicator'><span>Indicator</span></a></li>
+            <li><a href='about'><span>About</span></a></li>
+            <li class='last'><a href='oauthlogout'><span>Logout</span></a></li>
+        </ul>
+    </div>
+
+    <div id="infosection">
+        <div id="info_aboutpage">
+            <br>
+            <h2>{{displayinfo}}</h2>
+            <p id="aboutpage_info" align="left" style="padding-left: 30px;">{{aboutpage_extra_info}}</p>
+            <p id="aboutpage_info" align="left" style="padding-left: 30px">Contact Info:{{contact_info}}</p>
+        </div>
+
+
+        <!--div for repo information-->
+        <div id="infosection_userinfo">
+            <h6 class="userinfo_text" align="left">User Name: {{user_name}}</h6>
+            <h6 class="userinfo_text" align="left">Display Name: {{display_name}}</h6>
+            <h6 class="userinfo_text" align="left">Is Staff: {{is_staff}}</h6>
+            <h6 class="userinfo_text" align="left">Is Team: {{is_team}}</h6>
+            <h6 class="userinfo_text" align="left">Account Repository Number:{{account_reponumber}}</h6>
+            <h6 id="userid" class="hiddenText">{{uidForJSON}}</h6>
+        </div>
+
+
+        <div id="infosection_repoinfo">
+            <div id="repoSelectionTab">
+                <ul id="repotabs">
+                    <!--ELEMENT WILL BE GENERATED DYNAMICALLY HERE BASED ON INPUT DATA-->
+                </ul>
+            </div>
+
+                <div id="repoTabContent">
+                    <!--ELEMENT WILL BE GENERATED DYNAMICALLY HERE BASED ON INPUT DATA-->
+                </div>
+
+        </div>
+
+
+    </div>
+</div>
+<!--===============================End of div top container to hold the menu and the repo information section========-->
+
+<br>
+
+<div id="viewscene_guide">
+    <h1 class="viewsceneGuideText" align="center">To start</h1>
+    <h1 class="viewsceneGuideText" align="center">Select one of your repository from menu above.</h1>
+    <p class="viewsceneVoidText" align="center" style="padding-top: 400px" ><u>Alpha, Limited Test Version</u></p>
+</div>
+
+
+<!--===============================div 3D repo rendering part===============================-->
+<div id="viewscene">
+    <script type="text/javascript" src="/javascripts/build/three.min.js"></script>
+    <script type="text/javascript" src="/javascripts/js/renderers/Projector.js"></script>
+    <script type="text/javascript" src="/javascripts/js/renderers/CanvasRenderer.js"></script>
+    <script type="text/javascript" src="/javascripts/js/libs/stats.min.js"></script>
+    <script type="text/javascript" src="/javascripts/kinetic-v5.1.0.min.js"></script>
+    <script type="text/javascript" src="/javascripts/treemap.js"></script>
+
+
+</div>
+<!--===============================End div 3D repo rendering part============================-->
+
+
+<!--===============================Loading Spinner============================-->
+<div class="loader"><!-- Loading animation --></div>
+
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-61173558-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+
+</body>
+
+</html>
