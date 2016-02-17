@@ -1,5 +1,5 @@
 ## TeamWATCH-Web
-TeamWATCH is tool designed for visualizing source code repository change set status working with Bitbucket Code Hosting site.This is the TeamWATCH project branch at Ohio university Vital Lab and an extension of previous existing related project.   
+TeamWATCH is a tool designed for visualizing source code repository change set status working with Bitbucket Code Hosting site.This is the TeamWATCH project branch at Ohio university Vital Lab and an extension of previous existing related project.   
 Current Hosting Website URL: http://teamwatchweb.herokuapp.com/   
 Preview/Snapshot
 
@@ -7,6 +7,7 @@ Preview/Snapshot
 
 ## Guide
 Generate the OAuth consumers keys on bitbucket.org website and use it for the software login.
+
 Instruction Link:
 https://confluence.atlassian.com/bitbucket/oauth-faq-338365710.html#OAuthFAQ-WhatisOAuth?
 
