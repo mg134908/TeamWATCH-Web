@@ -35,7 +35,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(require('less-middleware')(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(clientSessions({secret: 'lkjwernLKJEWORNoeurOIWhqusERNdsfwNUPNJDbuwbncv',
+app.use(clientSessions({secret: 'lkjwernLKJEWORNoeurOIWhqLKerwqLSqwopgDIqwUBwqwVqwXwtaAegetjOsfwNUPNJDbuwbncv',//this secret is created randomly
     duration: 15 * 60 * 1000,//15 min session
     activeDuration: 1000 * 60 * 5}));//
 
